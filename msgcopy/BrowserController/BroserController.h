@@ -2,8 +2,8 @@
 //  BroserController.h
 //  msgcopy
 //
-//  Created by Gavin on 15/5/23.
-//  Copyright (c) 2015年 Gavin. All rights reserved.
+//  Created by wngzc on 15/5/23.
+//  Copyright (c) 2015年 wngzc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

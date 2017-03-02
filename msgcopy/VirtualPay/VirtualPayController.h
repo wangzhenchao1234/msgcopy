@@ -2,7 +2,7 @@
 //  VirtualPayController.h
 //  Kaoke
 //
-//  Created by Gavin on 15/4/28.
+//  Created by wngzc on 15/4/28.
 //  Copyright (c) 2015年 Msgcopy. All rights reserved.
 //
 

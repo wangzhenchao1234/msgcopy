@@ -2,7 +2,7 @@
 //  ServerChatManager.h
 //  Kaoke
 //
-//  Created by Gavin on 14/10/28.
+//  Created by wngzc on 14/10/28.
 //  Copyright (c) 2014年 Msgcopy. All rights reserved.
 //
 

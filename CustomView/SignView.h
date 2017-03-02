@@ -2,7 +2,7 @@
 //  SignView.h
 //  Kaoke
 //
-//  Created by Gavin on 15/3/24.
+//  Created by wngzc on 15/3/24.
 //  Copyright (c) 2015年 Msgcopy. All rights reserved.
 //
 

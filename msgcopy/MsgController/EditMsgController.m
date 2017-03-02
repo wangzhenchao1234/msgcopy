@@ -3,7 +3,7 @@
 //  msgcopy
 //
 //  Created by sh on 16/10/20.
-//  Copyright © 2016年 Gavin. All rights reserved.
+//  Copyright © 2016年 wngzc. All rights reserved.
 //
 
 #import "EditMsgController.h"

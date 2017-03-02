@@ -3,7 +3,7 @@
 //  msgcopy
 //
 //  Created by wangzc on 2017/1/18.
-//  Copyright © 2017年 Gavin. All rights reserved.
+//  Copyright © 2017年 wngzc. All rights reserved.
 //
 
 #import "FingerWaveView.h"

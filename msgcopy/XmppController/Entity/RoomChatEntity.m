@@ -2,7 +2,7 @@
 //  RoomChatEntity.m
 //  Kaoke
 //
-//  Created by Gavin on 14/12/25.
+//  Created by wngzc on 14/12/25.
 //  Copyright (c) 2014年 Msgcopy. All rights reserved.
 //
 

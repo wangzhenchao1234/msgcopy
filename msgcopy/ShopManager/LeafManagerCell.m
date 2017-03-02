@@ -3,7 +3,7 @@
 //  msgcopy
 //
 //  Created by Hackintosh on 15/11/2.
-//  Copyright © 2015年 Gavin. All rights reserved.
+//  Copyright © 2015年 wngzc. All rights reserved.
 //
 
 #import "LeafManagerCell.h"

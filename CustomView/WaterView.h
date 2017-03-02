@@ -2,8 +2,8 @@
 //  WaterView.h
 //  Water Waves
 //
-//  Created by Gavin on 14-5-23.
-//  Copyright (c) 2014年 Gavin. All rights reserved.
+//  Created by wngzc on 14-5-23.
+//  Copyright (c) 2014年 wngzc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

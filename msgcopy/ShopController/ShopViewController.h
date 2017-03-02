@@ -2,7 +2,7 @@
 //  ShopViewController.h
 //  Kaoke
 //
-//  Created by Gavin on 15/3/12.
+//  Created by wngzc on 15/3/12.
 //  Copyright (c) 2015年 Msgcopy. All rights reserved.
 //
 

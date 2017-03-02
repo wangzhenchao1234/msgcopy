@@ -2,7 +2,7 @@
 //  DiyBannerEntity.h
 //  Kaoke
 //
-//  Created by Gavin on 14/11/27.
+//  Created by wngzc on 14/11/27.
 //  Copyright (c) 2014年 Msgcopy. All rights reserved.
 //
 

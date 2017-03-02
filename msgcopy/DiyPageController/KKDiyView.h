@@ -2,7 +2,7 @@
 //  KKDiyView.h
 //  Kaoke
 //
-//  Created by Gavin on 14/12/4.
+//  Created by wngzc on 14/12/4.
 //  Copyright (c) 2014年 Msgcopy. All rights reserved.
 //
 
