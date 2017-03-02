@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Shop" rowHeight="68" id="KCe-HY-R9D" customClass="ShopStoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCe-HY-R9D" id="Qtd-OJ-eJn">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="67.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zhg-5i-tXN">
+                        <rect key="frame" x="10" y="10" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="bax-Ek-YnW"/>
+                            <constraint firstAttribute="height" constant="48" id="vrM-gm-Iqj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动鞋、运动服yy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flj-9I-uC9">
+                        <rect key="frame" x="66" y="38" width="221" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="8j9-AL-YJL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59607843140000005" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="361度官方旗舰店yyy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvh-bd-p1b">
+                        <rect key="frame" x="66" y="9" width="221" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Y4f-6p-h6j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="flj-9I-uC9" firstAttribute="top" secondItem="Dvh-bd-p1b" secondAttribute="bottom" constant="8" id="ACR-O7-z1H"/>
+                    <constraint firstItem="Zhg-5i-tXN" firstAttribute="top" secondItem="Qtd-OJ-eJn" secondAttribute="top" constant="10" id="Ih6-Gf-61Y"/>
+                    <constraint firstAttribute="trailing" secondItem="flj-9I-uC9" secondAttribute="trailing" id="T8J-TL-65t"/>
+                    <constraint firstAttribute="trailing" secondItem="Dvh-bd-p1b" secondAttribute="trailing" id="TDg-Sy-Fdc"/>
+                    <constraint firstItem="flj-9I-uC9" firstAttribute="leading" secondItem="Zhg-5i-tXN" secondAttribute="trailing" constant="8" id="XXX-So-JJ3"/>
+                    <constraint firstItem="Dvh-bd-p1b" firstAttribute="leading" secondItem="Zhg-5i-tXN" secondAttribute="trailing" constant="8" id="cpz-2G-up3"/>
+                    <constraint firstItem="Zhg-5i-tXN" firstAttribute="leading" secondItem="Qtd-OJ-eJn" secondAttribute="leading" constant="10" id="hDJ-VE-o5u"/>
+                    <constraint firstItem="Dvh-bd-p1b" firstAttribute="top" secondItem="Qtd-OJ-eJn" secondAttribute="top" constant="9" id="nEC-yn-r80"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="logoView" destination="Zhg-5i-tXN" id="YPy-M1-TYR"/>
+                <outlet property="productCategoryView" destination="flj-9I-uC9" id="9lN-iy-Ujr"/>
+                <outlet property="shopTitleView" destination="Dvh-bd-p1b" id="9WB-TC-Pl0"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="313"/>
+        </tableViewCell>
+    </objects>
+</document>

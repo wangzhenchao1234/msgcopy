@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="MsgCell" rowHeight="93" id="1vW-g3-aC9" customClass="MsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1vW-g3-aC9" id="Bhu-vy-Gwz">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1h-hm-PsE" customClass="MsgCellContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G1h-hm-PsE" firstAttribute="leading" secondItem="Bhu-vy-Gwz" secondAttribute="leading" id="Teq-YI-nT5"/>
+                    <constraint firstAttribute="trailing" secondItem="G1h-hm-PsE" secondAttribute="trailing" id="irc-Ie-Qsp"/>
+                    <constraint firstAttribute="bottom" secondItem="G1h-hm-PsE" secondAttribute="bottom" id="n00-y7-apY"/>
+                    <constraint firstItem="G1h-hm-PsE" firstAttribute="top" secondItem="Bhu-vy-Gwz" secondAttribute="top" id="t4I-FW-2mg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="cellContentView" destination="G1h-hm-PsE" id="5jr-qo-VUr"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="310.5"/>
+        </tableViewCell>
+    </objects>
+</document>

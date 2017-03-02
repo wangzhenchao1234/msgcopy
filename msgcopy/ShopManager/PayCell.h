@@ -1,0 +1,15 @@
+//
+//  PayCell.h
+//  PSClient
+//
+//  Created by Hackintosh on 15/9/28.
+//  Copyright © 2015年 Gavin. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface PayCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *realPayMoney;
+@property (weak, nonatomic) IBOutlet UILabel *youhui;
+
+@end

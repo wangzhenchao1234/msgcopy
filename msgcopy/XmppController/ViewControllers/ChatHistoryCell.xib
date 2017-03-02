@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="I5g-a9-FQN" customClass="ChatHistoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I5g-a9-FQN" id="9ZM-AE-oSU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_head.png" translatesAutoresizingMaskIntoConstraints="NO" id="L7l-yV-wKe">
+                        <rect key="frame" x="10" y="9" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="3KY-cA-P24"/>
+                            <constraint firstAttribute="height" constant="44" id="Wmc-P6-7O3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VW1-Fi-ltM">
+                        <rect key="frame" x="64" y="9" width="176" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="oKS-4e-Ffq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊天记录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxP-La-F6D">
+                        <rect key="frame" x="64" y="39" width="247" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="q1Y-YH-Wn7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="时间" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwU-OW-ZVd">
+                        <rect key="frame" x="233" y="9" width="79" height="21"/>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lsY-oE-Wfw" customClass="BadgeView">
+                        <rect key="frame" x="46" y="4" width="65" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AxP-La-F6D" secondAttribute="trailing" constant="9" id="1cX-Hf-VSD"/>
+                    <constraint firstItem="AxP-La-F6D" firstAttribute="leading" secondItem="9ZM-AE-oSU" secondAttribute="leading" constant="64" id="5ab-zQ-kVD"/>
+                    <constraint firstItem="VW1-Fi-ltM" firstAttribute="top" secondItem="9ZM-AE-oSU" secondAttribute="top" constant="9" id="7ko-Yy-Qps"/>
+                    <constraint firstItem="L7l-yV-wKe" firstAttribute="leading" secondItem="9ZM-AE-oSU" secondAttribute="leading" constant="10" id="8L0-XY-rIQ"/>
+                    <constraint firstAttribute="bottom" secondItem="AxP-La-F6D" secondAttribute="bottom" constant="6.5" id="FMO-Jo-GMa"/>
+                    <constraint firstItem="L7l-yV-wKe" firstAttribute="top" secondItem="9ZM-AE-oSU" secondAttribute="top" constant="9" id="ZEd-It-Sm7"/>
+                    <constraint firstItem="VW1-Fi-ltM" firstAttribute="leading" secondItem="9ZM-AE-oSU" secondAttribute="leading" constant="64" id="jtP-Uq-GKQ"/>
+                    <constraint firstAttribute="trailing" secondItem="VW1-Fi-ltM" secondAttribute="trailing" constant="80" id="l3Z-FH-pHB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descr" destination="AxP-La-F6D" id="k3a-T5-Mgo"/>
+                <outlet property="headView" destination="L7l-yV-wKe" id="VPr-73-RsD"/>
+                <outlet property="time" destination="iwU-OW-ZVd" id="aIL-B2-M6S"/>
+                <outlet property="title" destination="VW1-Fi-ltM" id="25i-d4-BcH"/>
+                <outlet property="unreadMsg" destination="lsY-oE-Wfw" id="dRc-vb-Ciq"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="333"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_head.png" width="120" height="120"/>
+    </resources>
+</document>

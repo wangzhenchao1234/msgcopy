@@ -1,0 +1,59 @@
+*{margin:0;padding:0;}
+html,body{width:100%;height:100%;-moz-user-select: none;-webkit-user-select: none;user-select: none;}
+body{padding:0;background-color:#FFF;}
+#content_main,#related{padding:0em 0.6em;padding-bottom:1em;}
+body{word-wrap: break-word;line-height:1.8em;}
+li{list-style:none;}
+a{color: #332E2D;text-decoration:none ;}
+.nodisplay{display:none;}
+.clear:after{ visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear{zoom:1;}
+#title{margin:0.7em 0;overflow:hidden;padding-left:0.6em;margin-left:-0.6em;margin-bottom:0px;}
+#header{border-left:0.4em solid #FFF;margin:1em 0;/*margin-left:-0.6em;*/padding:0 0.6em 0 0.2em;}
+#title_head{font-size:1.5em;/*font-weight:bold;*/padding-right:0.1em;line-height:1.2em;margin-bottom:8px;}
+/*#leftLine{width:10px;height:100%;float:left}*/
+#source_date{background-color:#FFF;height:0.9em;line-height:0.9em;vertical-align:top;margin:0 -0.6em;}
+#source,#date{background-color:white;float:left;display:inline-block;font-size:0.8em;color:silver;padding:0 0.6em;padding-bottom:0.05em;}
+#source{padding-left:0;}
+.marginL10{margin-left:14px;}
+#title_color{width:1em;height:1em;background-color:#FFF;float:left;/*margin-top:0.1em;*/margin-right:0.3em;}
+.img_wrap{position:relative;border:0px solid silver;/*height:200px;*/overflow:hidden;width:100%;}
+.img_wrap{margin-top:15px;margin-bottom:15px;}
+.bg_imgset{position:absolute;right:0;bottom:0;color:#FFF;padding:0px 15px;}
+img{display:block;width:100%;}
+/*height:100%;background-color:red;margin-right:1em;position:absolute;left:0;*/
+#related{font-family:"Microsoft yahei";margin-top:0.5em;}
+#related h2{vertical-align:middle;font-size:12px;background-color:#E5E4E4;font-weight:normal;color:#B2B0AF;line-height:1.8em;margin:0 -0.9em;padding-left:0.6em;}
+#related ul{margin:0 -0.6em;}
+#related li{line-height:3.5em;border-bottom:1px solid #DBDBDB;}
+#related li:last-child{border:0 none;}
+#related li a{text-decoration:none;display:block;padding:0 0.6em;}
+#related li,.img_wrap{-webkit-tap-highlight-color:rgba(230, 230, 230, 0.6);outline:none;}
+p{text-indent:2em;margin:0.6em 0;}
+
+.audio a,.webpage a,.attach a{padding-left:40px;display:block;line-height:45px;font-size:14px;}
+h6{font-weight:normal;text-align:center;color:#BABBBB;line-height:1em;margin-top:-10px;}
+img{display:none;}
+
+#content .link,#content .tele,#content .form,#content .coupon{box-shadow:0 0 3px #aeaeae;margin:13px 0;cursor:pointer;padding:7px 5px;border-radius:5px;}
+#content .link h4,#content .tele h4,#content .form h4,#content .coupon h4{font-size:17px;font-weight:normal;height:26px;color:#7A7A7A;line-height:26px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+#content .link img,#content .tele img,#content .form img,#content .coupon img{display:inline;width:26px;}
+#content .link .ico,#content .link .text,#content .tele .ico,#content .tele .text,#content .form .ico,#content .form .text,#content .coupon .ico,#content .coupon .text{float:left;height:26px;}
+#content .link .ico,#content .tele .ico,#content .form .ico,#content .coupon .ico{width:15%;text-align:center;font-size: 17px;line-height: 26px;}
+#content .link .text,#content .tele .text,#content .form .text,#content .coupon .text{width:80%;padding-left:4%;border-left:1px solid #9F9FA0;}
+#content .link s,#content .tele s,#content .form s,#content .coupon s{border:10px solid transparent;border-left-color:#9F9FA0;font-size:0;height:0;width:0;float:right;margin-top:3px;}
+#content .link s.right,#content .tele s.right,#content .form s.right,#content .coupon s.right{border-left-color:#FFF;margin-right:-18px;}
+
+#phones{position:fixed;bottom:0;top:0;left:0;right:0;display:none;z-index:10;}
+#phones dl{border-radius:5px;border:1px solid silver;background-color:#FFF;}
+#phones dd{border-bottom:1px solid silver;text-align:center;line-height:40px;}
+#phones dd a{display:block;}
+#phones dd:last-child{border:0 none;}
+#phones h3{background-color:#FFF;cursor:pointer;color:#2da7e0;text-align:center;border-radius:5px;border:1px solid silver;font-weight:normal;margin-top:5px;line-height:40px;}
+#phones .bg_wrap{position:absolute;opacity:0.3;bottom:0;left:0;right:0;top:0;background-color:black;}
+#phones .teles{position:absolute;bottom:10px;left:0;right:0;margin:0 0.6em;}
+#map img{display:inline;}
+#map h6{text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:20px;}
+
+.pubrels h3{font-weight:normal;border-bottom:1px solid silver;}
+.pubrels s{width:0;height:0;border:3px solid black;margin-right:10px;display:inline-block;position:relative;top:-3px;}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserQRView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6SP-jL-xsL">
+                    <rect key="frame" x="60" y="42" width="480" height="516"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KdZ-i5-zvD">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="516"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KdZ-i5-zvD" firstAttribute="leading" secondItem="6SP-jL-xsL" secondAttribute="leading" id="QRS-sC-G6w"/>
+                        <constraint firstAttribute="bottom" secondItem="KdZ-i5-zvD" secondAttribute="bottom" id="RHy-hc-LPD"/>
+                        <constraint firstAttribute="trailing" secondItem="KdZ-i5-zvD" secondAttribute="trailing" id="Ycz-W5-526"/>
+                        <constraint firstItem="KdZ-i5-zvD" firstAttribute="top" secondItem="6SP-jL-xsL" secondAttribute="top" id="xtn-nu-k7H"/>
+                        <constraint firstAttribute="width" secondItem="6SP-jL-xsL" secondAttribute="height" multiplier="93:100" id="yIN-Nn-lPW"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTu-fa-A20">
+                    <rect key="frame" x="539" y="12" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="rud-UC-Sj5"/>
+                        <constraint firstAttribute="height" constant="30" id="xjX-Yh-AJO"/>
+                    </constraints>
+                    <state key="normal" image="ic_close_white.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="L64-5l-Iem"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="6SP-jL-xsL" secondAttribute="centerX" id="7Tz-mv-DAl"/>
+                <constraint firstItem="6SP-jL-xsL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="USo-7m-UMg"/>
+                <constraint firstItem="6SP-jL-xsL" firstAttribute="top" secondItem="eTu-fa-A20" secondAttribute="bottom" id="lm1-Cb-zlZ"/>
+                <constraint firstItem="eTu-fa-A20" firstAttribute="leading" secondItem="KdZ-i5-zvD" secondAttribute="trailing" constant="-1" id="rxF-TR-Vot"/>
+                <constraint firstItem="eTu-fa-A20" firstAttribute="leading" secondItem="6SP-jL-xsL" secondAttribute="trailing" id="sqi-3c-cpG"/>
+                <constraint firstAttribute="centerY" secondItem="6SP-jL-xsL" secondAttribute="centerY" id="uvh-TT-o6g"/>
+                <constraint firstAttribute="trailing" secondItem="6SP-jL-xsL" secondAttribute="trailing" constant="60" id="vXV-GX-Ph6"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="sqi-3c-cpG"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="closeButton" destination="eTu-fa-A20" id="JWK-H0-YQ9"/>
+                <outlet property="mainView" destination="6SP-jL-xsL" id="B0Y-61-9Xr"/>
+                <outlet property="qrImageView" destination="KdZ-i5-zvD" id="F7V-cc-srK"/>
+            </connections>
+            <point key="canvasLocation" x="697" y="336"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close_white.png" width="36" height="36"/>
+    </resources>
+</document>

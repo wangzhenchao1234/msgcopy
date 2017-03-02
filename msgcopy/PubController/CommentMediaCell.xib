@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommentMediaCell" id="3Ts-gb-KKQ" customClass="CommentMediaCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mFj-Hq-HJt">
+                        <rect key="frame" x="5" y="5" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-x4-RsB">
+                        <rect key="frame" x="53" y="-2" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Td2-No-Sja"/>
+                            <constraint firstAttribute="height" constant="20" id="eAZ-A8-Tca"/>
+                            <constraint firstAttribute="width" constant="20" id="oI1-go-T1H"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                        <state key="normal" image="bt_cancel.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteAction:" destination="3Ts-gb-KKQ" eventType="touchUpInside" id="Foj-m9-N6A"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm_face.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJO-cc-LtT">
+                        <rect key="frame" x="15" y="15" width="40" height="40"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Wda-x4-RsB" firstAttribute="leading" secondItem="mFj-Hq-HJt" secondAttribute="trailing" constant="-12" id="2TX-ri-JSd"/>
+                <constraint firstItem="mFj-Hq-HJt" firstAttribute="top" secondItem="Wda-x4-RsB" secondAttribute="bottom" constant="-13" id="3F1-gv-3nw"/>
+                <constraint firstAttribute="bottom" secondItem="mFj-Hq-HJt" secondAttribute="bottom" constant="5" id="Dw5-Wo-jDV"/>
+                <constraint firstItem="ZJO-cc-LtT" firstAttribute="leading" secondItem="3Ts-gb-KKQ" secondAttribute="leading" constant="15" id="I9t-1v-bur"/>
+                <constraint firstItem="mFj-Hq-HJt" firstAttribute="leading" secondItem="3Ts-gb-KKQ" secondAttribute="leading" constant="5" id="NEd-k7-QKu"/>
+                <constraint firstItem="ZJO-cc-LtT" firstAttribute="top" secondItem="3Ts-gb-KKQ" secondAttribute="top" constant="15" id="QGN-f5-4xr"/>
+                <constraint firstAttribute="trailing" secondItem="mFj-Hq-HJt" secondAttribute="trailing" constant="5" id="Qf8-rb-iJ5"/>
+                <constraint firstAttribute="bottom" secondItem="ZJO-cc-LtT" secondAttribute="bottom" constant="15" id="S3g-sv-3FV"/>
+                <constraint firstItem="mFj-Hq-HJt" firstAttribute="top" secondItem="3Ts-gb-KKQ" secondAttribute="top" constant="5" id="fwx-mP-5i7"/>
+                <constraint firstAttribute="trailing" secondItem="ZJO-cc-LtT" secondAttribute="trailing" constant="15" id="jeN-IK-49i"/>
+                <constraint firstItem="Wda-x4-RsB" firstAttribute="leading" secondItem="mFj-Hq-HJt" secondAttribute="trailing" constant="-12" id="q8i-c3-rIZ"/>
+            </constraints>
+            <size key="customSize" width="73" height="75"/>
+            <connections>
+                <outlet property="deleteView" destination="Wda-x4-RsB" id="RVS-ep-ydY"/>
+                <outlet property="playView" destination="ZJO-cc-LtT" id="jG6-C4-uee"/>
+                <outlet property="thumbnailView" destination="mFj-Hq-HJt" id="BVQ-lg-WtT"/>
+            </connections>
+            <point key="canvasLocation" x="171" y="304"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_cancel.png" width="22" height="22"/>
+        <image name="cm_face.png" width="24" height="24"/>
+    </resources>
+</document>

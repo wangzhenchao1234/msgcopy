@@ -1,0 +1,138 @@
+//
+//  MsgCopy.pch
+//  msgcopy
+//
+//  Created by Gavin on 15/4/7.
+//  Copyright (c) 2015年 Gavin. All rights reserved.
+//
+
+#ifndef msgcopy_MsgCopy_pch
+#define msgcopy_MsgCopy_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ControllersHeader.h"
+#import "ViewsHeader.h"
+#import "FrameworksHeader.h"
+#import "ManagersHeader.h"
+#import "EntityHeader.h"
+#import "kAPIConst.h"
+#import "CRBoost.h"
+#import "KxLogger.h"
+
+#ifdef DEBUG
+#else
+#define NSLog(...) {};
+#endif
+
+/**
+ *  systitle获取webapp
+ *
+ *  @param systitle sysytitle
+ *
+ *  @return webappInfo
+ */
+CG_INLINE id
+CRWebAppTitle(NSString* systitle) {
+    
+    NSArray *apps = kAllWebApps;
+    __block WebAppEntity *result = nil;
+    [apps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        WebAppEntity *app = obj;
+        if ([app.systitle isEqualToString:systitle]) {
+            result = obj;
+            *stop = true;
+        }
+    }];
+    return result;
+}
+/**
+ *  webappid获取webapp
+ *
+ *  @param wid webAppID
+ *
+ *  @return webappInfo
+ */
+
+CG_INLINE id
+CRWebAppID(NSInteger wid) {
+    
+    NSArray *apps = kAllWebApps;
+    __block WebAppEntity *result = nil;
+    [apps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        WebAppEntity *app = obj;
+        if (app.aid == wid) {
+            result = obj;
+            *stop = true;
+        }
+    }];
+    return result;
+}
+/**
+ *  webappoptype 获取所有
+ *
+ *  @param optype 类型
+ *
+ *  @return 所有对应optype的webapp
+ */
+CG_INLINE NSArray *
+CRWebAppOptype(NSInteger optype) {
+    
+    NSArray *apps = kAllWebApps;
+    NSMutableArray *result = [NSMutableArray new];
+    [apps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        WebAppEntity *app = obj;
+        if (app.opType == optype) {
+            [result addObject:obj];
+        }
+    }];
+    return result;
+}
+
+CG_INLINE LimbEntity *
+CRLimbForID(NSInteger lid) {
+    
+    NSArray *limbs = kCurApp.limbs;
+    __block LimbEntity *result = nil;
+    [limbs enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        LimbEntity *limb = obj;
+        if (limb.lid == lid) {
+            result = limb;
+            *stop = true;
+        }
+    }];
+    return result;
+}
+
+CG_INLINE DiyPageEntity *
+CRPageForID(NSInteger pid) {
+    
+    NSArray *pages = kCurApp.diyPages;
+    __block DiyPageEntity *result = nil;
+    [pages enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        DiyPageEntity *page = obj;
+        if (page.dpid == pid) {
+            result = page;
+            *stop = true;
+        }
+    }];
+    return result;
+}
+
+CG_INLINE AppBannerEntity *
+CRBannerForTitle(AppBannerType type) {
+    
+    NSArray *banners = [AppDataManager sharedManager].banners;
+    __block AppBannerEntity *result = nil;
+    [banners enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        AppBannerEntity *banner = obj;
+        if (banner.bannerType == type) {
+            result = banner;
+            *stop = true;
+        }
+    }];
+    return result;
+}
+
+#endif

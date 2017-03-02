@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShareIcon" id="ZZK-y8-Q22" customClass="ShareCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-kD-Zlg">
+                        <rect key="frame" x="8" y="72" width="90" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="kJL-NN-0AF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B1z-nd-Lfi">
+                        <rect key="frame" x="25" y="13" width="55" height="55"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="B1z-nd-Lfi" secondAttribute="height" multiplier="1:1" id="P9J-ty-3h6"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2ft-kD-Zlg" secondAttribute="trailing" constant="8" id="0rI-Hb-cwa"/>
+                <constraint firstItem="B1z-nd-Lfi" firstAttribute="top" secondItem="ZZK-y8-Q22" secondAttribute="top" constant="13" id="KWz-oq-LEw"/>
+                <constraint firstItem="2ft-kD-Zlg" firstAttribute="leading" secondItem="ZZK-y8-Q22" secondAttribute="leading" constant="8" id="Kk2-7T-4Ng"/>
+                <constraint firstItem="2ft-kD-Zlg" firstAttribute="top" secondItem="B1z-nd-Lfi" secondAttribute="bottom" constant="4" id="hvh-ox-W2b"/>
+                <constraint firstAttribute="centerX" secondItem="B1z-nd-Lfi" secondAttribute="centerX" id="kCq-ro-Kbp"/>
+                <constraint firstAttribute="bottom" secondItem="2ft-kD-Zlg" secondAttribute="bottom" constant="8" id="vOF-Sf-pu0"/>
+            </constraints>
+            <size key="customSize" width="106" height="95"/>
+            <connections>
+                <outlet property="iconView" destination="B1z-nd-Lfi" id="N94-kj-eFE"/>
+                <outlet property="titleView" destination="2ft-kD-Zlg" id="EZm-XL-RWi"/>
+            </connections>
+            <point key="canvasLocation" x="335" y="380.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

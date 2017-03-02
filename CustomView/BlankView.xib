@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlankView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hd-7m-VHd">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="4hg-tp-MXe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                    <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4hg-tp-MXe"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="4hg-tp-MXe"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lfl-w9-Qh2">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ezE-8y-bny"/>
+                        <constraint firstAttribute="height" constant="60" id="jdz-eY-hjs"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ezE-8y-bny"/>
+                            <exclude reference="jdz-eY-hjs"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ezE-8y-bny"/>
+                            <include reference="jdz-eY-hjs"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyr-py-xWx">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="5Rr-Rh-XVP"/>
+                        <constraint firstAttribute="height" constant="30" id="ffU-kC-hWQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="15"/>
+                    <state key="normal" title="事件">
+                        <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5Rr-Rh-XVP"/>
+                            <exclude reference="ffU-kC-hWQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5Rr-Rh-XVP"/>
+                            <include reference="ffU-kC-hWQ"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Hd-7m-VHd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="0XA-Ov-cj8"/>
+                <constraint firstAttribute="centerX" secondItem="8Hd-7m-VHd" secondAttribute="centerX" id="MA0-yR-Mqu"/>
+                <constraint firstAttribute="trailing" secondItem="8Hd-7m-VHd" secondAttribute="trailing" constant="40" id="TNB-Ss-vyd"/>
+                <constraint firstAttribute="centerY" secondItem="8Hd-7m-VHd" secondAttribute="centerY" constant="-8.5" id="UZh-gu-c8f"/>
+                <constraint firstItem="lfl-w9-Qh2" firstAttribute="centerX" secondItem="8Hd-7m-VHd" secondAttribute="centerX" id="VZb-e4-bPl"/>
+                <constraint firstItem="oyr-py-xWx" firstAttribute="top" secondItem="8Hd-7m-VHd" secondAttribute="bottom" constant="14" id="WJ4-Bn-v7Y"/>
+                <constraint firstItem="oyr-py-xWx" firstAttribute="centerX" secondItem="8Hd-7m-VHd" secondAttribute="centerX" id="aUt-kk-Agz"/>
+                <constraint firstItem="8Hd-7m-VHd" firstAttribute="top" secondItem="lfl-w9-Qh2" secondAttribute="bottom" constant="8" id="uNQ-ir-wM6"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="8Hd-7m-VHd"/>
+                    <exclude reference="lfl-w9-Qh2"/>
+                    <exclude reference="oyr-py-xWx"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="0XA-Ov-cj8"/>
+                    <exclude reference="MA0-yR-Mqu"/>
+                    <exclude reference="TNB-Ss-vyd"/>
+                    <exclude reference="UZh-gu-c8f"/>
+                    <exclude reference="uNQ-ir-wM6"/>
+                    <exclude reference="WJ4-Bn-v7Y"/>
+                    <exclude reference="aUt-kk-Agz"/>
+                    <exclude reference="VZb-e4-bPl"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="8Hd-7m-VHd"/>
+                    <include reference="lfl-w9-Qh2"/>
+                    <include reference="oyr-py-xWx"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="0XA-Ov-cj8"/>
+                    <include reference="MA0-yR-Mqu"/>
+                    <include reference="TNB-Ss-vyd"/>
+                    <include reference="UZh-gu-c8f"/>
+                    <include reference="uNQ-ir-wM6"/>
+                    <include reference="WJ4-Bn-v7Y"/>
+                    <include reference="aUt-kk-Agz"/>
+                    <include reference="VZb-e4-bPl"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="actionView" destination="oyr-py-xWx" id="lRU-S2-MAd"/>
+                <outlet property="descrView" destination="8Hd-7m-VHd" id="dTr-oK-IHw"/>
+                <outlet property="imageView" destination="lfl-w9-Qh2" id="bJz-p4-rgM"/>
+            </connections>
+        </view>
+    </objects>
+</document>

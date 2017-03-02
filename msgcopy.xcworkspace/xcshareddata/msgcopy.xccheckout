@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>50AE3A78-1781-4175-B032-D6D40F05AAAB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>msgcopy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>151D1781FADCF295191D43B7FFA1F8E8F69249DB</key>
+		<string>git.oschina.net:Gavingu/Msgcopy.git</string>
+		<key>44170CFB7D478DCEB41AFAC2654C54B27C2F1C34</key>
+		<string>gitserver:kaoke_client_ios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>msgcopy.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>151D1781FADCF295191D43B7FFA1F8E8F69249DB</key>
+		<string>../../Msgcopy</string>
+		<key>44170CFB7D478DCEB41AFAC2654C54B27C2F1C34</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitserver:kaoke_client_ios</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>44170CFB7D478DCEB41AFAC2654C54B27C2F1C34</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>44170CFB7D478DCEB41AFAC2654C54B27C2F1C34</string>
+			<key>IDESourceControlWCCName</key>
+			<string>kaoke_client_ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>151D1781FADCF295191D43B7FFA1F8E8F69249DB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Msgcopy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

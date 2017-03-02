@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoodCell" rowHeight="125" id="pgi-FU-98C" customClass="MoodCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pgi-FU-98C" id="zSC-1B-Dkp">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-rh-qcG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入不多于30个字符的心情文字" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYj-UW-Q7b">
+                        <rect key="frame" x="5" y="99" width="310" height="20.5"/>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="14"/>
+                        <color key="textColor" red="0.72941176470588232" green="0.72941176470588232" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="LVF-rh-qcG" secondAttribute="bottom" constant="30" id="4Sy-HC-Uax"/>
+                    <constraint firstItem="lYj-UW-Q7b" firstAttribute="top" secondItem="LVF-rh-qcG" secondAttribute="bottom" constant="5" id="FU2-LB-yYA"/>
+                    <constraint firstItem="LVF-rh-qcG" firstAttribute="leading" secondItem="zSC-1B-Dkp" secondAttribute="leading" id="GOx-hV-EsD"/>
+                    <constraint firstAttribute="bottom" secondItem="lYj-UW-Q7b" secondAttribute="bottom" constant="5" id="TBb-TI-Qtp"/>
+                    <constraint firstItem="LVF-rh-qcG" firstAttribute="top" secondItem="zSC-1B-Dkp" secondAttribute="top" id="TTc-ww-Z09"/>
+                    <constraint firstAttribute="trailing" secondItem="lYj-UW-Q7b" secondAttribute="trailing" constant="5" id="ceB-dX-Cn9"/>
+                    <constraint firstItem="lYj-UW-Q7b" firstAttribute="leading" secondItem="zSC-1B-Dkp" secondAttribute="leading" constant="5" id="iKn-Xr-pK8"/>
+                    <constraint firstAttribute="trailing" secondItem="LVF-rh-qcG" secondAttribute="trailing" id="rER-Nq-RpD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textInputView" destination="LVF-rh-qcG" id="A3r-rq-DDN"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="116.5"/>
+        </tableViewCell>
+    </objects>
+</document>

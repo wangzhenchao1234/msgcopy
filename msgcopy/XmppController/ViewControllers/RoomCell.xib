@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="64" id="SBa-e0-l0F" customClass="RoomCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SBa-e0-l0F" id="1Mi-ke-Q5r">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_group.png" translatesAutoresizingMaskIntoConstraints="NO" id="8RL-m5-9SH">
+                        <rect key="frame" x="10" y="8" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="d7S-Lh-62g"/>
+                            <constraint firstAttribute="height" constant="46" id="qPf-na-89o"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群状态yy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ig-oI-egn">
+                        <rect key="frame" x="64" y="34" width="240" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="SZ6-eY-b9f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="群组名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggH-PE-cPg">
+                        <rect key="frame" x="64" y="8" width="240" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="GOW-KU-NTJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4ig-oI-egn" firstAttribute="top" secondItem="1Mi-ke-Q5r" secondAttribute="top" constant="34" id="2Cj-p9-Tb0"/>
+                    <constraint firstItem="8RL-m5-9SH" firstAttribute="top" secondItem="1Mi-ke-Q5r" secondAttribute="top" constant="8" id="6VB-9d-BVa"/>
+                    <constraint firstItem="8RL-m5-9SH" firstAttribute="leading" secondItem="1Mi-ke-Q5r" secondAttribute="leading" constant="10" id="DnX-Mc-gVV"/>
+                    <constraint firstAttribute="trailing" secondItem="ggH-PE-cPg" secondAttribute="trailing" constant="16" id="Vmh-cb-Fol"/>
+                    <constraint firstItem="ggH-PE-cPg" firstAttribute="top" secondItem="1Mi-ke-Q5r" secondAttribute="top" constant="8" id="aRh-Bc-ql3"/>
+                    <constraint firstAttribute="trailing" secondItem="4ig-oI-egn" secondAttribute="trailing" constant="16" id="d3g-qg-6AK"/>
+                    <constraint firstItem="4ig-oI-egn" firstAttribute="leading" secondItem="1Mi-ke-Q5r" secondAttribute="leading" constant="64" id="gcs-RG-kjM"/>
+                    <constraint firstItem="ggH-PE-cPg" firstAttribute="leading" secondItem="1Mi-ke-Q5r" secondAttribute="leading" constant="64" id="trV-ia-XgQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="8RL-m5-9SH" id="iPW-6c-e7M"/>
+                <outlet property="statusView" destination="4ig-oI-egn" id="PzB-rT-Eip"/>
+                <outlet property="titleView" destination="ggH-PE-cPg" id="x3t-on-buW"/>
+            </connections>
+            <point key="canvasLocation" x="189" y="333"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_group.png" width="60" height="60"/>
+    </resources>
+</document>

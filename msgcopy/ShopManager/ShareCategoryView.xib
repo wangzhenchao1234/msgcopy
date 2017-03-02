@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-NU-e88">
+                    <rect key="frame" x="0.0" y="250" width="600" height="350"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="YMd-Vh-yQo"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="E1a-rQ-mEb"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="c0o-PL-QLH"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分类至" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-uE-vNG">
+                    <rect key="frame" x="0.0" y="202" width="600" height="48"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="cOE-4g-AU5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.10009419326241134" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oD5-NU-e88" firstAttribute="top" secondItem="fuc-uE-vNG" secondAttribute="bottom" id="1gu-55-Tlu"/>
+                <constraint firstAttribute="trailing" secondItem="fuc-uE-vNG" secondAttribute="trailing" id="AEA-13-ZB8"/>
+                <constraint firstAttribute="bottom" secondItem="oD5-NU-e88" secondAttribute="bottom" id="QOq-hh-Qex"/>
+                <constraint firstAttribute="trailing" secondItem="oD5-NU-e88" secondAttribute="trailing" id="ifx-C9-zIX"/>
+                <constraint firstItem="fuc-uE-vNG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jzX-j8-eAh"/>
+                <constraint firstItem="oD5-NU-e88" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xUJ-Da-9h0"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomConstraint" destination="QOq-hh-Qex" id="OCb-XQ-Xmg"/>
+                <outlet property="heightConstraint" destination="YMd-Vh-yQo" id="LPb-c9-3Vm"/>
+                <outlet property="tableView" destination="oD5-NU-e88" id="Vfn-eG-x63"/>
+            </connections>
+        </view>
+    </objects>
+</document>

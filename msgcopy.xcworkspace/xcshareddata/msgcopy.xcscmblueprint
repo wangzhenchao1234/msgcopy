@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D96C6C815E49791253AB0F8A4C0A2B1BA87AF9C5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "151D1781FADCF295191D43B7FFA1F8E8F69249DB" : 0,
+    "D96C6C815E49791253AB0F8A4C0A2B1BA87AF9C5" : 0,
+    "44170CFB7D478DCEB41AFAC2654C54B27C2F1C34" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50AE3A78-1781-4175-B032-D6D40F05AAAB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "151D1781FADCF295191D43B7FFA1F8E8F69249DB" : "Msgcopy",
+    "D96C6C815E49791253AB0F8A4C0A2B1BA87AF9C5" : "kaoke_client_ios_%E6%B0%B8%E5%85%B4%E5%AF%BA\/",
+    "44170CFB7D478DCEB41AFAC2654C54B27C2F1C34" : "kaoke_client_ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "msgcopy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "msgcopy.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:Gavingu\/Msgcopy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "151D1781FADCF295191D43B7FFA1F8E8F69249DB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitserver:kaoke_client_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "44170CFB7D478DCEB41AFAC2654C54B27C2F1C34"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.1.30:client\/kaoke_client_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D96C6C815E49791253AB0F8A4C0A2B1BA87AF9C5"
+    }
+  ]
+}

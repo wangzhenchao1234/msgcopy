@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MCenterCell" rowHeight="82" id="SST-Z1-IoG" customClass="MCenterCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SST-Z1-IoG" id="yJ7-0v-Gq5">
+                <rect key="frame" x="0.0" y="0.0" width="367" height="81.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="44" translatesAutoresizingMaskIntoConstraints="NO" id="uFy-fS-9wV">
+                        <rect key="frame" x="15" y="19" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="1VR-Xy-fcE"/>
+                            <constraint firstAttribute="height" constant="44" id="kBW-sb-Wt0"/>
+                        </constraints>
+                        <attributedString key="attributedText"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="216" translatesAutoresizingMaskIntoConstraints="NO" id="yB7-mR-kBd">
+                        <rect key="frame" x="67" y="19" width="216" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qqr-9h-vU4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="292" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-Mj-OAI">
+                        <rect key="frame" x="67" y="42" width="292" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Id6-wP-tl7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AM 11月4日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="68" translatesAutoresizingMaskIntoConstraints="NO" id="SsC-QS-qxO">
+                        <rect key="frame" x="291" y="22.5" width="68" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17.5" id="MCE-12-C28"/>
+                            <constraint firstAttribute="width" constant="68" id="Szr-bv-PDH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="11"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SsC-QS-qxO" secondAttribute="trailing" constant="8" id="3zJ-Vg-JDY"/>
+                    <constraint firstItem="hWb-Mj-OAI" firstAttribute="leading" secondItem="yJ7-0v-Gq5" secondAttribute="leading" constant="67" id="7CG-es-gLs"/>
+                    <constraint firstItem="uFy-fS-9wV" firstAttribute="leading" secondItem="yJ7-0v-Gq5" secondAttribute="leading" constant="15" id="9uM-bB-86c"/>
+                    <constraint firstAttribute="trailing" secondItem="hWb-Mj-OAI" secondAttribute="trailing" constant="8" id="AOE-xX-mfu"/>
+                    <constraint firstItem="SsC-QS-qxO" firstAttribute="top" secondItem="yJ7-0v-Gq5" secondAttribute="top" constant="22.5" id="MlE-Zi-lO8"/>
+                    <constraint firstItem="hWb-Mj-OAI" firstAttribute="top" secondItem="yJ7-0v-Gq5" secondAttribute="top" constant="42" id="R7F-dU-QTy"/>
+                    <constraint firstAttribute="trailing" secondItem="yB7-mR-kBd" secondAttribute="trailing" constant="84" id="VSB-A6-prq"/>
+                    <constraint firstItem="yB7-mR-kBd" firstAttribute="leading" secondItem="yJ7-0v-Gq5" secondAttribute="leading" constant="67" id="W78-w9-Npu"/>
+                    <constraint firstItem="yB7-mR-kBd" firstAttribute="top" secondItem="yJ7-0v-Gq5" secondAttribute="top" constant="19" id="d8d-KO-5js"/>
+                    <constraint firstItem="uFy-fS-9wV" firstAttribute="top" secondItem="yJ7-0v-Gq5" secondAttribute="top" constant="19" id="o6M-e9-JfY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descrView" destination="hWb-Mj-OAI" id="sbr-uh-sbK"/>
+                <outlet property="iconView" destination="uFy-fS-9wV" id="uBo-04-mYa"/>
+                <outlet property="timeView" destination="SsC-QS-qxO" id="IUp-hI-cni"/>
+                <outlet property="titleView" destination="yB7-mR-kBd" id="ExK-9F-sWf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

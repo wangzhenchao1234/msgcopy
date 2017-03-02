@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ruC-pp-CHx" customClass="LimbShareHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QnO-2g-EE2">
+                    <rect key="frame" x="15" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="WEI-Cx-Jm5"/>
+                        <constraint firstAttribute="height" constant="25" id="yZ9-vN-s3G"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一级频道名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-qv-XKh">
+                    <rect key="frame" x="48" y="11" width="544" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="d8C-00-GeG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gQc-qv-XKh" secondAttribute="trailing" constant="8" id="4J2-J9-hGI"/>
+                <constraint firstItem="QnO-2g-EE2" firstAttribute="centerY" secondItem="gQc-qv-XKh" secondAttribute="centerY" id="BsG-Dd-9e8"/>
+                <constraint firstItem="QnO-2g-EE2" firstAttribute="top" secondItem="ruC-pp-CHx" secondAttribute="top" constant="13" id="CrG-Gg-iUv"/>
+                <constraint firstItem="QnO-2g-EE2" firstAttribute="leading" secondItem="ruC-pp-CHx" secondAttribute="leading" constant="15" id="WWF-3L-cXZ"/>
+                <constraint firstItem="gQc-qv-XKh" firstAttribute="leading" secondItem="QnO-2g-EE2" secondAttribute="trailing" constant="8" id="orc-Py-ZgZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="thumbnail" destination="QnO-2g-EE2" id="gdX-oZ-Nn7"/>
+                <outlet property="titleView" destination="gQc-qv-XKh" id="B9G-p2-agB"/>
+            </connections>
+            <point key="canvasLocation" x="406" y="399"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeafCell" rowHeight="50" id="AWF-kY-HMk" customClass="LeafShareCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AWF-kY-HMk" id="D2n-iD-1ic">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uon-Ne-RZe">
+                        <rect key="frame" x="30" y="17" width="15" height="15"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="PTU-iq-Ps6"/>
+                            <constraint firstAttribute="height" constant="15" id="p2q-hh-dbC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="耳机频道1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SN-II-G13">
+                        <rect key="frame" x="53" y="8" width="539" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="eN6-Xp-vtb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5SN-II-G13" firstAttribute="leading" secondItem="Uon-Ne-RZe" secondAttribute="trailing" constant="8" id="AzD-Ry-UAR"/>
+                    <constraint firstItem="Uon-Ne-RZe" firstAttribute="leading" secondItem="D2n-iD-1ic" secondAttribute="leading" constant="30" id="ccj-30-SVN"/>
+                    <constraint firstItem="Uon-Ne-RZe" firstAttribute="centerY" secondItem="5SN-II-G13" secondAttribute="centerY" id="i8s-2p-vkY"/>
+                    <constraint firstAttribute="trailing" secondItem="5SN-II-G13" secondAttribute="trailing" constant="8" id="jAb-rY-rVb"/>
+                    <constraint firstItem="Uon-Ne-RZe" firstAttribute="centerY" secondItem="D2n-iD-1ic" secondAttribute="centerY" id="wyX-Wy-ncE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dotView" destination="Uon-Ne-RZe" id="yQd-00-hzt"/>
+                <outlet property="titleView" destination="5SN-II-G13" id="MgR-QW-Cx5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

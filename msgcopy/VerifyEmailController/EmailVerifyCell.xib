@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EmailVerifyCell" id="KPq-qE-STe" customClass="EmailVerifyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KPq-qE-STe" id="DTK-n7-4Im">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dl_vericode.png" translatesAutoresizingMaskIntoConstraints="NO" id="E0L-YN-ga7">
+                        <rect key="frame" x="36" y="15" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="PHx-As-BGd"/>
+                            <constraint firstAttribute="height" constant="25" id="aSH-W7-QBA"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="这里是占位" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ipS-hN-pek">
+                        <rect key="frame" x="80" y="15" width="114" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="Xwo-hw-MX1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht6-6c-Avg" customClass="JKCountDownButton">
+                        <rect key="frame" x="202" y="15" width="82" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="ciY-Yu-n6T"/>
+                            <constraint firstAttribute="height" constant="25" id="iOT-t7-hCt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                        <state key="normal" title="获取验证码">
+                            <color key="titleColor" red="0.1137254902" green="0.48627450979999998" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="getVerifyCode:" destination="KPq-qE-STe" eventType="touchUpInside" id="NZz-85-eLn"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="E0L-YN-ga7" secondAttribute="bottom" constant="9.5" id="AFn-sq-u5g"/>
+                    <constraint firstItem="ht6-6c-Avg" firstAttribute="centerY" secondItem="ipS-hN-pek" secondAttribute="centerY" constant="-0.5" id="AsV-RG-Ufb"/>
+                    <constraint firstItem="E0L-YN-ga7" firstAttribute="centerY" secondItem="ipS-hN-pek" secondAttribute="centerY" constant="-0.5" id="CVG-mK-m4o"/>
+                    <constraint firstAttribute="trailing" secondItem="ht6-6c-Avg" secondAttribute="trailing" constant="36" id="Fg3-0R-jww"/>
+                    <constraint firstItem="E0L-YN-ga7" firstAttribute="leading" secondItem="DTK-n7-4Im" secondAttribute="leading" constant="36" id="N9Y-2y-qvM"/>
+                    <constraint firstItem="ht6-6c-Avg" firstAttribute="leading" secondItem="ipS-hN-pek" secondAttribute="trailing" constant="8" id="Ykg-ey-ctw"/>
+                    <constraint firstItem="ipS-hN-pek" firstAttribute="leading" secondItem="E0L-YN-ga7" secondAttribute="trailing" constant="19" id="m9U-Pr-4sK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <inset key="separatorInset" minX="36" minY="0.0" maxX="36" maxY="0.0"/>
+            <connections>
+                <outlet property="iconView" destination="E0L-YN-ga7" id="ves-Qm-Xvi"/>
+                <outlet property="inputView" destination="ipS-hN-pek" id="XoN-6y-AAB"/>
+                <outlet property="verifyButoon" destination="ht6-6c-Avg" id="r5S-bT-tK0"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="219"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dl_vericode.png" width="25" height="25"/>
+    </resources>
+</document>

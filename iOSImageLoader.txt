@@ -1,0 +1,39 @@
+ic_launcher==http://cloud9.kaoke.me/smedia/app/sda1/appresource/38b8c43bc42e03fc1f12c97f43342e85/2017/01/%E6%B0%B8%E5%85%B4%E5%AF%BAlogo.jpg
+splash_img==http://cloud9.kaoke.me/smedia/app/sda1/appresource/38b8c43bc42e03fc1f12c97f43342e85/2017/01/QQ%CD%BC%C6%AC20150724112102.jpg
+orderdir==/Users/macpro-1/workspace/packtemp/kaoke_client_ios_永兴寺/
+ic_title==http://cloud9.kaoke.me/smedia/app/sda1/appresource/38b8c43bc42e03fc1f12c97f43342e85/2017/02/%E6%B0%B8%E5%85%B4%E5%AF%BA%E6%A0%87%E9%A2%98.png
+/Users/macpro-1/workspace/packtemp/kaoke_client_ios_永兴寺/Resource/welcome
+rm -rf /Users/macpro-1/workspace/packtemp/kaoke_client_ios_永兴寺/Resource/welcome.bundle
+缩小
+裁剪
+原图宽==512   原图高===512
+裁剪宽==120   裁剪高===120
+缩小
+裁剪
+原图宽==512   原图高===512
+裁剪宽==120   裁剪高===120
+缩小
+裁剪
+原图宽==512   原图高===512
+裁剪宽==58   裁剪高===58
+缩小
+裁剪
+原图宽==512   原图高===512
+裁剪宽==80   裁剪高===80
+缩小
+裁剪
+原图宽==640   原图高===1136
+裁剪宽==640   裁剪高===1136
+缩小
+裁剪
+原图宽==640   原图高===1136
+裁剪宽==640   裁剪高===960
+放大
+裁剪
+原图宽==640   原图高===1136
+裁剪宽==750   裁剪高===1334
+放大
+裁剪
+原图宽==640   原图高===1136
+裁剪宽==1242   裁剪高===2208
+ok

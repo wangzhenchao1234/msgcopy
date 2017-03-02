@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="msyh.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AddCommentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="608" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="F7k-mv-B6W">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="KVU-RG-cbo"/>
+                        <constraint firstAttribute="width" constant="52" id="PCg-pp-Ha0"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KVU-RG-cbo"/>
+                            <exclude reference="PCg-pp-Ha0"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="KVU-RG-cbo"/>
+                            <include reference="PCg-pp-Ha0"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-8L-8Kf">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="F7k-mv-B6W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="9c3-RR-FHa"/>
+                <constraint firstItem="OZR-8L-8Kf" firstAttribute="leading" secondItem="F7k-mv-B6W" secondAttribute="trailing" constant="8" id="Sdw-ka-4kC"/>
+                <constraint firstItem="F7k-mv-B6W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="UFR-DW-Ecu"/>
+                <constraint firstItem="OZR-8L-8Kf" firstAttribute="bottom" secondItem="F7k-mv-B6W" secondAttribute="bottom" id="XDN-GY-MRD"/>
+                <constraint firstAttribute="trailing" secondItem="OZR-8L-8Kf" secondAttribute="trailing" constant="10" id="Y1I-dZ-DL2"/>
+                <constraint firstItem="OZR-8L-8Kf" firstAttribute="top" secondItem="F7k-mv-B6W" secondAttribute="top" id="wMB-qr-9Ls"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="F7k-mv-B6W"/>
+                    <exclude reference="OZR-8L-8Kf"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Sdw-ka-4kC"/>
+                    <exclude reference="XDN-GY-MRD"/>
+                    <exclude reference="Y1I-dZ-DL2"/>
+                    <exclude reference="wMB-qr-9Ls"/>
+                    <exclude reference="9c3-RR-FHa"/>
+                    <exclude reference="UFR-DW-Ecu"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="F7k-mv-B6W"/>
+                    <include reference="OZR-8L-8Kf"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Sdw-ka-4kC"/>
+                    <include reference="XDN-GY-MRD"/>
+                    <include reference="Y1I-dZ-DL2"/>
+                    <include reference="wMB-qr-9Ls"/>
+                    <include reference="9c3-RR-FHa"/>
+                    <include reference="UFR-DW-Ecu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="F7k-mv-B6W" id="AQW-dc-5rk"/>
+                <outlet property="titleView" destination="OZR-8L-8Kf" id="HaH-uw-zzQ"/>
+            </connections>
+            <point key="canvasLocation" x="-42" y="73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon.png" width="60" height="60"/>
+    </resources>
+</document>

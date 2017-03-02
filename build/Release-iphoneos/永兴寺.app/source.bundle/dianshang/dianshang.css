@@ -1,0 +1,60 @@
+*{margin:0;padding:0;}
+html,body{width:100%;-moz-user-select: none;-webkit-user-select: none;user-select: none;}
+body{overflow:hidden;} /*为了使在ios设备上滑动出现错乱的bug*/
+li{list-style:none;}
+a{color: #332E2D;text-decoration:none ;}
+html,body{width:100%;overflow-x:hidden;}
+.clear:after{ visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clear{zoom:1;}
+.swipe {overflow: hidden;visibility: hidden;position: relative;}
+.swipe-wrap {overflow: hidden;position: relative;height:100%;}
+.swipe-wrap > li {float:left;width:100%;position: relative;overflow:hidden;}
+.gray,.content p,h6{color:#ADADAD;}
+.content p{margin-bottom:0.5em;}
+#slider img{width:100%;height:200px;}
+#slider .position{text-align:center;position:relative;top:-30px;}
+#slider .position li{display:inline-block;width:10px;height:10px;border-radius:10px;background:#96A3AC;margin: 0 2px;cursor: pointer;margin:0 5px;}
+#slider .position li.on{background-color: #FFF;}
+
+#title,.shopinfo,.content{padding:0.1em 0.5em;}
+#title{margin-top:13px;}
+#main .content .img_wrap img{display:none;width:100%;}
+#title h3{/*overflow: hidden;white-space: nowrap;text-overflow: ellipsis;*/word-break:break-all;}
+#title p{margin:0.2em 0 0.5em;}
+.shopinfo{overflow:hidden;margin-top:5px;}
+.shopinfo .form{float:right;background-color:#2D9DCF;padding:0.3em 0.5em;font-size:20px;margin-top:5px;}
+.shopinfo .form a{color:white;}
+.shopinfo .price b{font-size:1.5em;color:#D00420;margin-right:0.5em;font-family:"Microsoft Yahei";}
+.shopinfo .price p{}
+.shopinfo .price small{background-color:#D00420;padding:0.2em;color:white;border-radius:0.3em;position:relative;top:-3px;;}
+.content .img_wrap{overflow:hidden;}
+.imgset h6{text-align:center;min-height:0.5em;}
+.content{border-top:7px solid #E2E2E2;margin-top:7px;padding-top:0.5em;}
+.content .ico,.content .text{float:left;}
+.content .ico{width:25%;font-size: 17px;height:50px;}
+.content .ico img{height:50px;}
+.content .text{width:70%;padding-left:4%;color:white;font-size:1.2em;line-height:50px;}
+.content .link{cursor:pointer;}
+.content .link,.content .tele{background-color:#9ED5F4;margin:0.5em 0;}
+.content h6{text-align:center;}
+
+#phones{position:fixed;bottom:0;top:0;left:0;right:0;display:none;z-index:10;}
+#phones dl{border-radius:5px;border:1px solid silver;background-color:#FFF;}
+#phones dd{border-bottom:1px solid silver;text-align:center;line-height:40px;}
+#phones dd a{display:block;}
+#phones dd:last-child{border:0 none;}
+#phones h3{background-color:#FFF;cursor:pointer;color:#2da7e0;text-align:center;border-radius:5px;border:1px solid silver;font-weight:normal;margin-top:5px;line-height:40px;}
+#phones .bg_wrap{position:absolute;opacity:0.3;bottom:0;left:0;right:0;top:0;background-color:black;}
+#phones .teles{position:absolute;bottom:10px;left:0;right:0;margin:0 0.6em;}
+
+.pubrels h3{position:relative;text-align:center;padding:0 5px;background-color:white;display:inline;left:50%;top:10px;}
+.pubrels ul{overflow:hidden;zoom:1;margin:10px;}
+.pubrels li{float:left;width:48%;overflow:hidden;margin:1%;position:relative;}
+.pubrels li > div{border:1px solid silver;}
+.pubrels li p{overflow:hidden;}
+.pubrels li p.img{position:relative;}
+.pubrels li img.video{position:absolute;top:50%;left:50%;margin-top:-30px;margin-left:-30px;}
+.pubrels li .desc{padding:10px;}
+.pubrels li span.nowprice{color:red;margin-right:5px;}
+.pubrels li h4{font-weight:normal;font-family:"Microsoft Yahei";font-size:16px;margin-bottom:5px;}
+.pubrels li span.oriprice{color:silver;}

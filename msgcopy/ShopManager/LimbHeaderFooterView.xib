@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LimbHeaderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NP6-wl-NqS">
+                    <rect key="frame" x="15" y="13" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0Yt-QP-tSv"/>
+                        <constraint firstAttribute="width" constant="25" id="FI2-07-geC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一级频道名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swy-Jw-qqY">
+                    <rect key="frame" x="48" y="15" width="469" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="91p-Y2-gyq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mQ-yM-Xb6">
+                    <rect key="frame" x="525" y="15" width="67" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="Jty-1b-2qK"/>
+                        <constraint firstAttribute="height" constant="22" id="dlg-to-7eR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title=" 编辑" image="bt_add_comment.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="swy-Jw-qqY" firstAttribute="centerY" secondItem="9mQ-yM-Xb6" secondAttribute="centerY" id="1eF-kZ-7a8"/>
+                <constraint firstItem="NP6-wl-NqS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="V5e-EF-afy"/>
+                <constraint firstItem="swy-Jw-qqY" firstAttribute="leading" secondItem="NP6-wl-NqS" secondAttribute="trailing" constant="8" id="hSe-bu-0dK"/>
+                <constraint firstItem="NP6-wl-NqS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jSR-TU-gez"/>
+                <constraint firstItem="NP6-wl-NqS" firstAttribute="centerY" secondItem="swy-Jw-qqY" secondAttribute="centerY" id="m80-E5-UzB"/>
+                <constraint firstItem="9mQ-yM-Xb6" firstAttribute="leading" secondItem="swy-Jw-qqY" secondAttribute="trailing" constant="8" id="pn1-28-Ngb"/>
+                <constraint firstAttribute="trailing" secondItem="9mQ-yM-Xb6" secondAttribute="trailing" constant="8" id="xwC-10-A6p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editeButton" destination="9mQ-yM-Xb6" id="bDQ-FC-jkv"/>
+                <outlet property="thumbnail" destination="NP6-wl-NqS" id="kPD-TV-GHy"/>
+                <outlet property="titleView" destination="swy-Jw-qqY" id="wE2-FY-hSu"/>
+            </connections>
+            <point key="canvasLocation" x="406" y="399"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bt_add_comment.png" width="22" height="22"/>
+    </resources>
+</document>
